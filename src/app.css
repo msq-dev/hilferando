@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+	overflow-y: scroll;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: currentColor;
+}
+
+button,
+input,
+textarea,
+select {
+	font: inherit;
+}
+
+button {
+	color: currentColor;
+	border: none;
+	cursor: pointer;
+}
+
+[hidden] {
+	display: none;
+}
+
+:root {
+	--clr-primary: hsl(185, 100%, 34%);
+	--clr-primary-dark: hsl(185, 100%, 18%);
+	--clr-primary-bright: hsl(185, 93%, 53%);
+
+	--clr-primary-100: hsl(185, 75%, 95%);
+	--clr-primary-200: hsl(185, 75%, 85%);
+	--clr-primary-300: hsl(185, 75%, 75%);
+
+	--clr-warning: hsl(7, 82%, 37%);
+	--clr-success: hsl(151, 90%, 35%);
+
+	--clr-purple: hsl(281, 82%, 37%);
+	--clr-orange: hsl(25, 82%, 37%);
+	--clr-blue: hsl(217, 90%, 35%);
+
+	--ff-primary: 'IBM Plex Sans';
+	--ff-accent: 'Racing Sans One';
+}
+
+html {
+	background-color: var(--clr-primary-100);
+}
+
+body {
+	font-family: var(--ff-primary), sans-serif;
+	color: var(--clr-primary-dark);
+	touch-action: manipulation;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/* main > * {
+	padding: 0.7em;
+} */
